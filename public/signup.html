@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Sign Up</title>
+    <link href="main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body class="text-center">
+    <form class="form-signin border rounded">
+        <img class="mb-4" src="./webtube logo.png" alt="" width="100" height="72">
+        <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+        <div class="form-row">
+            <div class="col">
+                <input type="text" id="fname" name="firstname" class="form-control rounded-pill"
+                    placeholder="First Name" required autofocus>
+            </div>
+            <div class="col">
+                <input type="text" id="lname" name="lastname" class="form-control rounded-pill" placeholder="Last Name"
+                    required autofocus>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <select class="form-control rounded-pill" name="gender" id="gender">
+                    <option>Choose Gender...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="col">
+                <label for="uname" class="sr-only">User Name</label>
+                <input type="text" id="uname" name="username" class="form-control rounded-pill" placeholder="User name"
+                    required autofocus>
+            </div>
+        </div>
+        <div>
+            <label for="email" class="sr-only">Email</label>
+            <input type="email" id="email" name="email" class="form-control rounded-pill" placeholder="Email" required
+                autofocus>
+        </div>
+        <div class="form-row">
+            <div class="col">
+                <label for="password1" class="sr-only">Password</label>
+                <input type="password" id="password1" name="password1" class="form-control rounded-pill"
+                    placeholder="Password" required>
+            </div>
+            <div class="col">
+                <label for="password2" class="sr-only">Confirm Password</label>
+                <input type="password" id="password2" name="password2" class="form-control rounded-pill"
+                    placeholder="Confirm Password" required>
+            </div>
+        </div>
+        <div>
+            <label for="qn" class="sr-only">Security Question</label>
+            <input type="text" id="qn" name="question" class="form-control rounded-pill"
+                placeholder="Choose Security Question" required autofocus>
+        </div>
+        <div>
+            <label for="ans" class="sr-only">Answer</label>
+            <input type="text" id="ans" name="answer" class="form-control rounded-pill" placeholder="Answer" required
+            required autofocus>
+        </div>
+        <div>
+            <button class="btn btn-lg btn-primary btn-block rounded-pill" id="btn"
+                style="background-color: #5cb85c;font-family: Oswald" type="button" >Sign Up</button>
+        </div>
+        <span>Back to <a href="/">Login</a></span>
+    </form>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="./validate.js"></script>
+
+</body>
+
+</html>
